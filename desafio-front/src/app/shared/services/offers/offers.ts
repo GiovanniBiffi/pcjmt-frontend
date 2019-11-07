@@ -1,4 +1,4 @@
-export interface Produto{
+export interface Offers{
     id:number;
     title:string;    
     description:string;

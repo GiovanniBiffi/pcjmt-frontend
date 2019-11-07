@@ -3,8 +3,9 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
-import { CardModule } from './shared/card/card.module';
 import { CategoriaModule } from './shared/categoria/categoria.module';
+import { AppRoutingModule } from './app.routing.module';
+import { OfferModule } from './shared/services/offers/offer/offer.module';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,9 @@ import { CategoriaModule } from './shared/categoria/categoria.module';
   imports: [
     BrowserModule,
     CategoriaModule,
-    CoreModule
+    OfferModule,
+    CoreModule,    
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
