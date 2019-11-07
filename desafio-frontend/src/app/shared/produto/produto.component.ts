@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { OffersService } from '../services/offers/offers.service';
+import { Offer } from '../services/offers/offer/offer';
 
 @Component({
     selector: 'app-produto',
@@ -15,6 +16,8 @@ export class ProdutoComponent{
     @Input() produto_preco_mercado:string = 'R$ 20,00';  
     @Input() produto_imagem:string = 'https://cdnbr2.img.sputniknews.com/images/1202/87/12028777.jpg'; 
 
+    @Input() offers:Offer[] = [];  
+
     constructor(        
         private offersService: OffersService
     ){}
@@ -27,6 +30,7 @@ export class ProdutoComponent{
         this.offersService.listaOffers().subscribe(
             offers => {
                 console.log(offers);
+                this.offers = this.offers.concat(offers);
             },
             err =>{
                 console.log("erro! ");

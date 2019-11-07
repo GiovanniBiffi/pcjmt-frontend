@@ -1,8 +1,10 @@
-export interface Offers{
+import { Image } from './image';
+
+export interface Offer{
     id:number;
     title:string;    
     description:string;
     price:string;
     market_price:string;
-    image:string;
+    image:Image;
 }
