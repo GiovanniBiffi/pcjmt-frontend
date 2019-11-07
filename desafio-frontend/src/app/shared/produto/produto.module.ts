@@ -9,7 +9,7 @@ import { OffersModule } from '../services/offers/offers.module';
 @NgModule({
     declarations: [ProdutoComponent],
     exports: [ProdutoComponent],
-    imports:[CardModule, CommonModule]
+    imports:[CardModule, OffersModule, CommonModule]
 })
 export class ProdutoModule{
 
