@@ -2,11 +2,6 @@
  Teste prático Desenvolvedor Front End - Polícia Judiciária Civil do Estado de Mato Grosso
 
 # Versão Angular
-   / \   _ __   __ _ _   _| | __ _ _ __     / ___| |   |_ _|  <br />
-  / △ \ | '_ \ / _` | | | | |/ _` | '__|   | |   | |    | |  <br />
- / ___ \| | | | (_| | |_| | | (_| | |      | |___| |___ | |  <br />
-/_/   \_\_| |_|\__, |\__,_|_|\__,_|_|       \____|_____|___|  <br />
-               |___/  <br />
 @angular/cli: 1.4.10  <br />
 node: 8.11.2  <br />
 os: win32 x64  <br />
