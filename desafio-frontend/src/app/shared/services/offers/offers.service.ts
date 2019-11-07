@@ -1,12 +1,11 @@
 import { HttpClient, HttpParams } from "@angular/common/http";
 import { Injectable } from "@angular/core";
-
 import { Offers } from './offers';
 
 
 const API = 'https://playground.barato.com.br/desafio-front/api';
 
-@Injectable()
+@Injectable({providedIn:'root'})
 export class OffersService{
     constructor(private http: HttpClient){}
     listaOffers(){

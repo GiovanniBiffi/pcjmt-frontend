@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { OffersService } from '../services/offers/offers.service';
 
 @Component({
     selector: 'app-produto',
@@ -15,15 +14,15 @@ export class ProdutoComponent{
     @Input() produto_preco_mercado:string = 'R$ 20,00';  
     @Input() produto_imagem:string = 'https://cdnbr2.img.sputniknews.com/images/1202/87/12028777.jpg'; 
 
-    constructor(        
+    /*constructor(        
         private offersService: OffersService
-    ){}
+    ){}*/
 
     ngOnInit(): void {
 
     }
 
-    test(){
+    /*test(){
         this.offersService.listaOffers().subscribe(
             offers => {
                 console.log(offers);
@@ -32,5 +31,5 @@ export class ProdutoComponent{
                 console.log("erro! ");
             }
         );            
-    }
+    }*/
 }
