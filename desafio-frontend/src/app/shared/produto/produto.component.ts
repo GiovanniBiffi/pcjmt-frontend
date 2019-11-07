@@ -17,6 +17,8 @@ export class ProdutoComponent{
     @Input() produto_imagem:string = 'https://cdnbr2.img.sputniknews.com/images/1202/87/12028777.jpg'; 
 
     @Input() offers:Offer[] = [];  
+    @Input() offersLista:Offer[] = [];
+    @Input() offr:Offer = null;
 
     constructor(        
         private offersService: OffersService
@@ -29,12 +31,24 @@ export class ProdutoComponent{
     test(){
         this.offersService.listaOffers().subscribe(
             offers => {
-                console.log(offers);
+                //console.log(offers);
                 this.offers = this.offers.concat(offers);
+                for (var off in this.offers) {                     
+                    //console.log(this.offersLista[off].id);
+                    this.offersService.getOffer(this.offers[off].id.toString()).subscribe(
+                        offer => {
+                            console.log(offer);
+                        },
+                        err =>{
+                            console.log("erro offer!");
+                        }
+
+                    );
+                }
             },
             err =>{
                 console.log("erro! ");
             }
-        );            
+        ); 
     }
 }

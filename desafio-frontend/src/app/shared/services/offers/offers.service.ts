@@ -12,4 +12,11 @@ export class OffersService{
         return this.http
         .get<Offer[]>(API + '/offers');
     }
+
+    getOffer(offerId: string){        
+        return this.http
+        .get<Offer[]>(API+'/offer/'+offerId);
+    }
+
+    // https://playground.barato.com.br/desafio-front/api/offer
 }

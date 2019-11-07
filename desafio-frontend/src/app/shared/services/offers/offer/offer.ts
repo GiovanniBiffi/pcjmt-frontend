@@ -7,4 +7,5 @@ export interface Offer{
     price:string;
     market_price:string;
     image:Image;
+    category:string;
 }
