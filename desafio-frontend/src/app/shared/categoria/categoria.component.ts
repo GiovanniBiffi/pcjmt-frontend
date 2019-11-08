@@ -48,12 +48,12 @@ export class CategoriaComponent{
         for (var groupName in groups) {
             categorias.push({categoria_title: groupName, categoria_produtos: groups[groupName]});
         }
-        this.categorias = categorias;
-        this.categorias.sort(function(a, b){
+        categorias.sort(function(a, b){
             if(a.categoria_titulo > b.categoria_titulo) { return -1; }
             if(a.categoria_titulo < b.categoria_titulo) { return 1; }
             return 0;
         });
+        this.categorias = categorias;
     }
 
     getOffers(){
