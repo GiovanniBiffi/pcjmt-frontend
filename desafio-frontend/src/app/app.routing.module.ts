@@ -1,16 +1,23 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { CardComponent } from './shared/card/card.component';
 import { OfferComponent } from './shared/services/offers/offer/offer.component';
+import { CategoriaComponent } from './shared/categoria/categoria.component';
 
 const routes: Routes = [
     {   
         path : '', 
         pathMatch : 'full',
-        redirectTo : 'home'
+        redirectTo : 'categorias'
+    },
+    {
+        path : 'categorias', 
+        component: CategoriaComponent,      
+        data:{
+            title:'Categorias'
+        } 
     },        
     {
-        path : 'offer', 
+        path : 'offer/:offerId', 
         component: OfferComponent,      
         data:{
             title:'Offer'

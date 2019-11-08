@@ -11,13 +11,6 @@ import { ProdutoModule } from './produto.module';
 })
 
 export class ProdutoComponent{
-    @Input() produto_id:string = '0';
-    @Input() produto_titulo:string = 'Título padrão produto';    
-    @Input() produto_descricao:string = 'Descrição padrão produto';   
-    @Input() produto_preco:string = 'R$ 10,00';
-    @Input() produto_preco_mercado:string = 'R$ 20,00';  
-    @Input() produto_imagem:string = 'https://cdnbr2.img.sputniknews.com/images/1202/87/12028777.jpg'; 
-
     @Input() produtos:Produto[] = [];
 
 }

@@ -6,6 +6,6 @@
         <p *ngIf="card_with_prices" class="card-title pricing-card-title">
             <app-prices [preco]="card_price" [preco_mercado]="card_price_market"></app-prices>
         </p>
-        <a [routerLink]="['offer']" class="btn btn-lg btn-block btn-primary">Comprar</a>
+        <a [routerLink]="card_link" class="btn btn-lg btn-block btn-primary">Comprar</a>
     </div>
 </div>

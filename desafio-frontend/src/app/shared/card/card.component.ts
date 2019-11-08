@@ -14,5 +14,5 @@ export class CardComponent{
     @Input() card_with_prices:boolean = false;
     @Input() card_price:string = '';
     @Input() card_price_market:string = '';
-
+    @Input() card_link:string = '';
 }
