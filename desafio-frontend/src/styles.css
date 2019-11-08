@@ -8,6 +8,18 @@
         height: 15vw;
         object-fit: cover;
     }
+    .CarouselImg img {
+        width: auto;
+        height: 400px;
+        max-height: 400px;
+        object-fit: cover;
+      }
+    .carousel-ind img{
+        width: auto;
+        height: 100px;
+        max-height: 100px;
+        object-fit: cover;
+    }
   }
 
  @media (max-width : 414px) {
@@ -16,4 +28,27 @@
         height: 50vw;
         object-fit: cover;   
     }
+    .CarouselImg img {
+        width: auto;
+        height: 200px;
+        max-height: 400px;
+        object-fit: cover;
+    }
+    .carousel-ind img{
+        width: auto;
+        height: 50px;
+        max-height: 50px;
+        display: inline-block;
+        object-fit: cover;
+    }
+    .carousel-ind{
+        width: 0 auto;
+    }
  }
+
+.pl10{
+    padding-left: 15px;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { OfferComponent } from './shared/services/offers/offer/offer.component';
 import { CategoriaComponent } from './shared/categoria/categoria.component';
+import { ProdutoDetalhesComponent } from './shared/produto/produto-detalhes/produto-detalhes.component';
 
 const routes: Routes = [
     {   
@@ -17,10 +17,10 @@ const routes: Routes = [
         } 
     },        
     {
-        path : 'offer/:offerId', 
-        component: OfferComponent,      
+        path : 'produto/:produtoId', 
+        component: ProdutoDetalhesComponent,      
         data:{
-            title:'Offer'
+            title:'Produto'
         } 
     }
 ];
