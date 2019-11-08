@@ -1,15 +1,11 @@
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         
-        <div class="carousel-inner">
-          <div class="carousel-item CarouselImg active">
-            <img class="d-block w-100 img-fluid" src="https://ogimg.infoglobo.com.br/in/11248264-dee-0b0/FT1086A/652/2014-678125828-2014010800643.jpg_20140108.jpg" alt="First slide">
-          </div>
-          <div class="carousel-item CarouselImg">
-            <img class="d-block w-100 img-fluid" src="https://cdnbr2.img.sputniknews.com/images/1202/87/12028777.jpg" alt="Second slide">
-          </div>
-          <div class="carousel-item CarouselImg">
-            <img class="d-block w-100 img-fluid" src="https://abrilsuperinteressante.files.wordpress.com/2018/09/tubarao-_branco.png" alt="Third slide">
-          </div>
+        
+
+        <div class="carousel-inner">        
+          <div class="carousel-item CarouselImg" [ngClass]="{'active':i==0}" *ngFor="let image of images; let i = index">
+            <img class="d-block w-100 img-fluid" [src]="image.url" alt="">
+          </div>         
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -21,21 +17,9 @@
         </a>
       </div>
 <div class="row">
-    <div class="pl10 text-center">
-        <div class="carousel-ind  active" data-target="#carouselExampleIndicators" data-slide-to="0" >
-                <img src="https://ogimg.infoglobo.com.br/in/11248264-dee-0b0/FT1086A/652/2014-678125828-2014010800643.jpg_20140108.jpg" alt="" class="img-thumbnail img-fluid">
-        </div>
-        <div class="carousel-ind" data-target="#carouselExampleIndicators" data-slide-to="1">
-                <img src="https://cdnbr2.img.sputniknews.com/images/1202/87/12028777.jpg" alt="" class="img-thumbnail img-fluid">
-        </div>
-        <div class="carousel-ind"data-target="#carouselExampleIndicators" data-slide-to="2">
-                <img src="https://abrilsuperinteressante.files.wordpress.com/2018/09/tubarao-_branco.png" alt="" class="img-thumbnail img-fluid">
-        </div>
-        <div class="carousel-ind"data-target="#carouselExampleIndicators" data-slide-to="2">
-                <img src="https://abrilsuperinteressante.files.wordpress.com/2018/09/tubarao-_branco.png" alt="" class="img-thumbnail img-fluid">
-        </div>
-        <div class="carousel-ind"data-target="#carouselExampleIndicators" data-slide-to="2">
-                <img src="https://abrilsuperinteressante.files.wordpress.com/2018/09/tubarao-_branco.png" alt="" class="img-thumbnail img-fluid">
-        </div>  
+    <div class="pl10 text-center">      
+        <div *ngFor="let image of images; let i = index" class="carousel-ind  active" data-target="#carouselExampleIndicators" [attr.data-slide-to]="i">
+                <img [src]="image.url" alt="" class="img-thumbnail img-fluid">
+        </div>          
     </div>
 </div>

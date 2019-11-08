@@ -1,13 +1,13 @@
 <br />
 <div class="row">
     <div class="col-sm-8">
-        <app-carousel></app-carousel>
+        <app-carousel [images]="produto.produto_imagens"></app-carousel>
     </div>
     <div class="col-sm-4">
-        <h1 class="text-center">Hotel</h1>
+        <h5 class="text-center">{{produto.produto_titulo}}</h5>
         <div class="text-center">Descrição</div>
         <h4 class="text-center">por apenas</h4>
-        <h1 class="text-center">R$ 0,00</h1>
+        <h1 class="text-center">{{produto.produto_preco}}</h1>
         <a [routerLink]="['/pagamento']" class="btn btn-lg btn-block btn-primary">Comprar</a>
     </div>
     <div class="col-sm-12">
@@ -15,32 +15,8 @@
         <div class="row">
             <div class="col-sm-6">
                 <i class="fa fa-check"></i>
-                Oferta inicial 2 ....
-            </div>
-            <div class="col-sm-6">
-                <i class="fa fa-check"></i>
-                Oferta inicial 2 ....
-            </div>
-            <div class="col-sm-6">
-                <i class="fa fa-check"></i>
-                Oferta inicial 2 ....
-            </div>
-            <div class="col-sm-6">
-                    <i class="fa fa-check"></i>
-                    Oferta inicial 2 ....
-            </div>
-            <div class="col-sm-6">
-                    <i class="fa fa-check"></i>
-                    Oferta inicial 2 ....
-            </div>
-            <div class="col-sm-6">
-                <i class="fa fa-check"></i>
-                Oferta inicial 2 ....
-            </div>
-            <div class="col-sm-6">
-                <i class="fa fa-check"></i>
-                Oferta inicial 2 ....
-            </div>
+                <div [innerHTML]="produto.produto_descricao"></div>
+            </div>           
         </div>
     </div>
     <div class="col-sm-12">
@@ -48,20 +24,8 @@
         <div class="row">
             <div class="col-sm-6">
                 <i class="fa fa-star"></i>
-                Oferta inicial 2 ....
-            </div>
-            <div class="col-sm-6">
-                <i class="fa fa-star"></i>
-                Oferta inicial 2 ....
-            </div>
-            <div class="col-sm-6">
-                <i class="fa fa-star"></i>
-                Oferta inicial 2 ....
-            </div>
-            <div class="col-sm-6">
-                <i class="fa fa-star"></i>
-                Oferta inicial 2 ....
-            </div>
+                <div [innerHTML]="produto.produto_descricao"></div>
+            </div> 
         </div>
     </div>
 </div>
