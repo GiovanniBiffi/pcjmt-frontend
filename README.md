@@ -52,3 +52,9 @@ npm install rxjs@6.0.0 --save   <br />
     "./node_modules/popper.js/dist/umd/popper.min.js",   <br />
     "./node_modules/bootstrap/dist/js/bootstrap.min.js"   <br />
 ]   <br />
+
+# Como realizar o Deploy ?
+Neste projeto, existe o arquivo dist.zip em:    <br />
+
+
+Fazendo o download de dist.zip poderá realizar o deploy em qualquer servidor de aplicação, na pasta raiz de index.html.
