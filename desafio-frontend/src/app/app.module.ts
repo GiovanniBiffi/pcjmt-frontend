@@ -7,6 +7,7 @@ import { OfferModule } from './shared/services/offers/offer/offer.module';
 import { CoreModule } from './core/core.module';
 import { AppRoutingModule } from './app.routing.module';
 import { ProdutoDetalhesModule } from './shared/produto/produto-detalhes/produto-detalhes.module';
+import { PagamentoModule } from './shared/pagamento/pagamento.module';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { ProdutoDetalhesModule } from './shared/produto/produto-detalhes/produto
     BrowserModule,
     CategoriaModule,
     ProdutoDetalhesModule,
+    PagamentoModule,
     OfferModule,
     CoreModule,    
     AppRoutingModule

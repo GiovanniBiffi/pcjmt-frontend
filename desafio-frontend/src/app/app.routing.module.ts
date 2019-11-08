@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { CategoriaComponent } from './shared/categoria/categoria.component';
 import { ProdutoDetalhesComponent } from './shared/produto/produto-detalhes/produto-detalhes.component';
+import { PagamentoComponent } from './shared/pagamento/pagamento.component';
 
 const routes: Routes = [
     {   
@@ -21,6 +22,13 @@ const routes: Routes = [
         component: ProdutoDetalhesComponent,      
         data:{
             title:'Produto'
+        } 
+    },        
+    {
+        path : 'pagamento', 
+        component: PagamentoComponent,      
+        data:{
+            title:'Pagamento'
         } 
     }
 ];
