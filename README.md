@@ -57,4 +57,6 @@ npm install rxjs@6.0.0 --save   <br />
 Neste projeto, existe o arquivo dist.zip em:    <br />
 https://github.com/GiovanniBiffi/pcjmt-frontend/blob/master/desafio-frontend/dist.zip
 
-Fazendo o download de dist.zip poderá realizar o deploy em qualquer servidor de aplicação, descompactando o arquivo dist.zip na pasta raiz de index.html.
+Fazendo o download de dist.zip poderá realizar o deploy em qualquer servidor de aplicação.
+1) descompacte o arquivo dist.zip 
+2) copie o conteúdo da pasta "desafio-frontend" na pasta raiz de index.html do seu servidor de aplicação.
