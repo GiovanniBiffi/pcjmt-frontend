@@ -1,14 +1,14 @@
 <!-- card_with_prices - no título já vem DE: => POR: -->
 <div class="container-fluid">
 <div class="row">    
-        <div class="col-sm-3" *ngFor="let offer of offers;">
+        <div class="col-sm-3" *ngFor="let produto of produtos;">
             <app-card
-                [card_title]="offer.title"
-                [card_image_src]="offer.image.url"
+                [card_title]="produto.produto_titulo"
+                [card_image_src]="produto.produto_imagem.url"
                 [card_text]=""
                 [card_with_prices]="false"
-                [card_price_market]="offer.market_price"
-                [card_price]="offer.price"
+                [card_price_market]="produto.produto_preco_mercado"
+                [card_price]="produto.produto_preco"
             ></app-card>
         </div>    
 </div>

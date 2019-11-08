@@ -18,5 +18,4 @@ export class OffersService{
         .get<Offer[]>(API+'/offer/'+offerId);
     }
 
-    // https://playground.barato.com.br/desafio-front/api/offer
 }
